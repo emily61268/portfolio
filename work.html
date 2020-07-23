@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>My Work</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/jquery-sakura.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-sakura.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html"><img id="profile-photo" src="img/IMG_7102.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link active" href="work.html">Work <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="Resume.pdf" target="_blank">CV</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      $(window).scroll(function(e) {
+        // add/remove class to navbar when scrolling to hide/show
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+          $('.navbar').addClass("navbar-hide");
+        } else {
+          $('.navbar').removeClass("navbar-hide");
+        }
+      });
+    </script>
+  </header>
+
+  <div class="topContainer">
+    <img id="sakura-right" src="img/orient_cherry_right.png" alt="cherry_right">
+    <div class="fadeText">
+      <h1 id="greeting">My Work</h1>
+    </div>
+    <img id="sakura-left" src="img/orient_cherry_left.png" alt="cherry_left">
+    <img id="sakura-petals" src="img/sakura-petals.png" alt="sakura-petals">
+  </div>
+
+  <div class="introduction">
+    <img src="Icons/workstation.png" alt="work intro photo">
+    <p id="intro-text">Here are some projects I've done. More will be soon added to the page.</p>
+  </div>
+  <hr id="breaker">
+
+  <div class="introduction">
+    <h1 id="advancedIntro"><a id="links" href="https://cdm17278.contentdm.oclc.org" target="_blank">SRSU Digital Collections</a></h1>
+    <h2 id="passion-title">From</h2>
+    <img class="project-demo" src="img/Project-Website-ori.gif" alt="Web-Original">
+    <h2 id="passion-title">To</h2>
+    <img class="project-demo" src="img/Project-Website-1.gif" alt="Web-Improved">
+    <p id="project-text">I customized web pages that are hosted on CONTENTdm for Sul Ross State University (SRSU) to display <a id="links" href="https://cdm17278.contentdm.oclc.org" target="_blank">digital collections</a>. The default pages of the system and the features included were simple, so considering the audience (including the researchers and the elders), I designed the pages to be more user-friendly and to have more SRSU style.</p>
+  </div>
+  <hr id="breaker">
+
+  <div class="introduction">
+    <h1 id="browser-demo">Web Browser - Qroxx</h1>
+    <iframe src="https://www.youtube.com/embed/AXT7y0U3zS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="margin-bottom: 3%"></iframe>
+    <p id="project-text">As one of my course projects, I successfully developed a three-tier, graphical, event-driven desktop application, a web browser, which I named it Qroxx, using Visual Studio and an object-oriented language (C#) while incorporating essential software construction methodologies. The browser has basic functionality, such as going to the previous/next page, refreshing a page, bookmarking a page, etc. It was challenging but I loved this work because it was the first software I've ever built.</p>
+  </div>
+  <hr id="breaker">
+
+  <div class="contact">
+    <h1 id="advancedIntro">Let's Get In Touch</h1>
+    <p id="talk-text">I'm currently available for internships or a full-time position. If you are interested in learning more about how I can contribute or just want to say hi, feel free to reach out to me.</p>
+    <div align="center">
+      <a class="email_button" href="mailto:pengyuan.emily.huang@gmail.com" target="_blank" rel="nofollow noopener">Email Me</a>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-links">
+      <span class="footer-link"><a id="nav-link" href="https://github.com/emily61268" target="_blank">Github</a></span>
+      <span class="footer-link"><a id="nav-link" href="https://www.linkedin.com/in/emily-huang-784b491b2/" target="_blank">LinkedIn</a></span>
+      <span class="footer-link"><a id="nav-link" href="mailto:pengyuan.emily.huang@gmail.com" target="_blank">Contact</a></span>
+    </div>
+
+
+    <div class="footer-statement">
+      <p>© 2020 Peng-Yuan "Emily" Huang. All rights reserved.</p>
+      <p>Credit: Icons are downloaded from <a id="icons8" href="https://icons8.com/" target="_blank">Icons8</a>.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("body").on("contextmenu", function(e) {
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
