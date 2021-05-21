@@ -146,7 +146,7 @@ h2 {
 
 @media (max-width: 1000px) {
   .sakura {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -170,11 +170,6 @@ h2 {
     transition: 0.5s;
   }
 }
-
-
-
-
-
 
 .introduction {
   text-align: center;
