@@ -151,6 +151,11 @@ h2 {
   }
 }
 
+@media (max-width: 1000px) {
+  .sakura {
+    display: none;
+  }
+}
 
 .introduction {
   text-align: center;
