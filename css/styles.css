@@ -144,6 +144,12 @@ h2 {
 
 }
 
+@media (max-width: 1000px) {
+  .sakura {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   #self-intro {
     width: 100px !important;
@@ -151,11 +157,24 @@ h2 {
   }
 }
 
-@media (max-width: 1000px) {
-  .sakura {
-    display: none;
+@media (max-width: 450px) {
+  .fadeText {
+    top: 13%;
+    transition: 0.5s;
   }
 }
+
+@media (max-width: 370px) {
+  .fadeText {
+    top: 10%;
+    transition: 0.5s;
+  }
+}
+
+
+
+
+
 
 .introduction {
   text-align: center;
