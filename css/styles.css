@@ -37,8 +37,13 @@ h2 {
 }
 
 .navbar-nav {
-  width: 52px;
+  width: 70px !important;
   background-color: #fcf8f3;
+  border-radius: 5px;
+}
+
+.nav-item {
+  padding-left: 10px;
 }
 
 .navbar-toggler {
@@ -137,6 +142,13 @@ h2 {
     height: 500px !important;
   }
 
+}
+
+@media (max-width: 500px) {
+  #self-intro {
+    width: 100px !important;
+    transition: width 2s;
+  }
 }
 
 
@@ -370,6 +382,7 @@ a#nav-link:hover {
 #self-intro {
   border-radius: 100%;
   width: 200px;
+  transition: width 2s;
 }
 
 #intro-text {
